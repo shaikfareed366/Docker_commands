@@ -1,0 +1,10 @@
+docker image rm -f react-image
+docker build -t react-image .
+docker run -p -d 5000:5000 react-image
+docker ps
+docker run -i -t react-image
+docker image ls
+docker pull image_name
+docker container stop
+docker exec -it react-app bash
+docker run -i -t -d -p 3000:3000 react-client
